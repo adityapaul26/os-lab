@@ -1,22 +1,24 @@
-# Ignore compiled binaries / executables
-*.out
-*.exe
+# Ignore everything by default
+*
 
-# Ignore object files
-*.o
+# Except C source files and headers
+!*.c
+!*.h
 
-# Ignore temporary/editor files
+# Optional: keep folder structure
+!*/
+
+# Ignore editor/temp files
 *~
 *.swp
 *.swo
-
-# Ignore logs
 *.log
 
-# Ignore any build folders (optional)
+# Ignore build/output directories (if any)
 build/
 bin/
 obj/
+
 
 # Ignore .qodo files
 .qodo 
