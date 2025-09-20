@@ -1,0 +1,22 @@
+# Ignore compiled binaries / executables
+*.out
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore temporary/editor files
+*~
+*.swp
+*.swo
+
+# Ignore logs
+*.log
+
+# Ignore any build folders (optional)
+build/
+bin/
+obj/
+
+# Ignore .qodo files
+.qodo 
