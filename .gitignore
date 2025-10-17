@@ -4,6 +4,7 @@
 # Except C source files and headers
 !*.c
 !*.h
+!*.sh
 
 # Optional: keep folder structure
 !*/
