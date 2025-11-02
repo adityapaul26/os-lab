@@ -1,7 +1,9 @@
 ## My os-lab codes
 
- processes
+processes
  
- threads
+threads
  
- bash scripting
+bash scripting
+
+pipes

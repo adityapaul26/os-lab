@@ -5,6 +5,7 @@
 !*.c
 !*.h
 !*.sh
+!*.md
 
 # Optional: keep folder structure
 !*/
