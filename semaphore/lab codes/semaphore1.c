@@ -29,7 +29,7 @@ int main(){
 	pthread_create(&tid2,NULL,increment,NULL);
 
 	pthread_join(tid1,NULL);
-	pthread_join(tid1,NULL);
+	pthread_join(tid2,NULL);
 
 	sem_destroy(&sem);
 
