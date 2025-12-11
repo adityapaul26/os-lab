@@ -4,7 +4,7 @@
 #include<unistd.h>
 
 void* threadFunc(void *arg){
-	int i,res;
+int i,res;
 	res = pthread_setcancelstate(PTHREAD_CANCEL_ENABLE,NULL);
 	if(res!=0){
 		printf("");

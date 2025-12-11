@@ -13,7 +13,7 @@ int main() {
   if (p == 0) {
     printf("im a child process %d\n", getpid());
     printf("the child process is executing\n");
-    sleep(30);
+    sleep(30);//keeping the child alive
     printf("the parent %d\n", getppid());
   } else {
     printf("hi i am the parent\n");

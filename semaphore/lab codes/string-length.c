@@ -2,15 +2,19 @@
 #include<pthread.h>
 #include<stdlib.h>
 #include<unistd.h>
-#include <stdbool.h>
+#include<stdbool.h>
 #include<semaphore.h>
+#include<string.h>
 
-char buffer='o';
+char buffer[100];
 sem_t sem;
+
 
 void* writer(void *arg){ 
     while(true){
-        scanf(" %c",&buffer);
+        // scanf(" %c",&buffer);
+        // printf("Enter: "); avoid prints
+        fgets(buffer,sizeof(buffer),stdin);
         sem_post(&sem);
     }
 }
@@ -18,7 +22,7 @@ void* writer(void *arg){
 void* reader(void *arg){
     while(true){
         sem_wait(&sem);
-        printf("reading!-%c\n",buffer);
+        printf("reading!-%ld\n",strlen(buffer)-1);
     }
 }
 
@@ -32,4 +36,5 @@ int main(){
     sem_destroy(&sem);
     return 0;
 }
+
 

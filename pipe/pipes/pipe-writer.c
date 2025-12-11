@@ -8,7 +8,7 @@ int main() {
   int fd;
   char msg[] = "hello from the writer-lightangel26...";
   unlink("the-pipe");
-  mkfifo("the-pipe", 0666);
+  // mkfifo("the-pipe", 0666);
 
   if (mkfifo("the-pipe", 0666) == -1) {
     perror("mkfifo failed");

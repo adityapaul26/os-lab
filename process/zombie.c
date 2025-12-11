@@ -10,10 +10,12 @@ int main(){
 	p = fork();
 
 	if(p==0){
+        //child process
 		printf("This is the child process!\n");
 		printf("im a child and im  existing--- %d\n",getpid());
 		exit(0);
 	}else{
+        //parent
 		printf("im the parent process!\n");
 		sleep(30);
 	}
